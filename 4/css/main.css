@@ -1,0 +1,303 @@
+/* Global rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: cadetblue; */
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* main */
+
+.main {
+    display: flex;
+}
+/* nav */
+.main-nav {
+    width: 180px;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-nav h1 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    padding: 30px 40px;
+    position: relative;
+    margin: auto;
+    width: fit-content;
+}
+.main-nav h1::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    bottom: 20px;
+    left: 27%;
+}
+
+.main-nav h1::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    left: calc(50% - 8px);
+    background-color: black;
+    bottom: 12px;
+    border: 5px solid white; 
+}
+
+.main-nav ul {
+    text-align: center;
+}
+.main-nav li {
+    border-radius: 7px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.main-nav li i {
+    margin-right: 10px;
+}
+.main-nav li a {
+    padding: 10px 20px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+}
+.main-nav li a:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+/* main-content */
+.main-content {
+    flex: 1;
+    background-color: #f2f6fa;
+}
+.main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.main-content header img{
+    width: 35px;
+}
+.main-content header .fa-bell {
+    font-size: 22px;
+    transform: translateY(calc(50% - 20px));
+    position: relative;
+    margin-right: 8px;
+}
+.main-content header .fa-bell::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: red;
+    right: -4px;
+    border-radius: 50%;
+    top: -5px;
+}
+
+.main-content header .notification {
+    position: relative;
+}
+.main-content header form {
+    position: relative;
+}
+.main-content header form input {
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    font-size: 15px;
+    padding: 8px;
+    padding-left: 30px;
+}
+
+.main-content header form input ,
+.main-content header input:focus::placeholder {
+    transition: 0.5s;
+}
+.main-content header input:focus::placeholder {
+    opacity: 0;
+}
+.main-content header input:focus {
+    outline: none;
+    width: 180px;
+}
+.main-content header form i {
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    bottom: 8px;
+}
+
+.main .main-content .dashboard {
+    padding: 10px;
+}
+
+.main .main-content .dashboard > h1 {
+    position: relative;
+    width: fit-content;
+}
+.main .main-content .dashboard > h1::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    background-color: white;
+    height: 3px;
+    bottom: -5px;
+    border-radius: 5px;
+}
+.main .main-content .dashboard > h1::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    background-color: black;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    border-radius: 5px;
+}
+
+
+.main .main-content .dashboard .elements {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 30px;
+}
+
+.main .main-content .dashboard .elements .element {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    height: 450px;
+}
+
+.main .main-content .dashboard .elements .element .title h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main .main-content .dashboard .elements .element .title span {
+    color: #878787;
+}
+/* .main .main-content .dashboard .elements > :not(:first-child){
+    padding: 20px;
+} */
+
+.main .main-content .dashboard .elements .element .welcome > :first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ededed;
+}
+
+.main .main-content .dashboard .elements .element .welcome > :first-child img {
+    width: 200px;
+}
+
+.main .main-content .dashboard .elements .element .welcome > .image {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 115px;
+    left: 30px;
+    background-color: white;
+    border-radius: 200px;
+    box-shadow: 2px 2px 2px 2px #ededed;
+}
+
+.main .main-content .dashboard .elements .element .welcome > .image > img {
+    max-width: 80%;
+    transform: translate(6px, 6px);
+}
+
+.main .main-content .dashboard .elements .element .boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 35px 20px;
+}
+.main .main-content .dashboard .elements .element .boxes .box {
+    text-align: center;
+}
+.main .main-content .dashboard .elements .element .boxes .box h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.main .main-content .dashboard .elements .element .boxes .box span {
+    font-size: 14px;
+    color: #878787;
+}
+
+.main .main-content .dashboard .elements .element .welcome > :last-child {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.main .main-content .dashboard .elements .element .welcome > :last-child > span {
+    background-color: #0077ff;
+    padding: 5px;
+    border-radius: 7px;
+    margin-right: 5px;
+    color: white;
+}
+
+.main .main-content .dashboard .elements .element .draft {
+
+}

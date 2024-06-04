@@ -1,0 +1,12 @@
+increment counter
+----
+<!-- to make changes from js easy -->
+<span style="width: 80%;"></span>
+---
+flex: 1 => take the whole Space
+---
+caret-color
+--
+writing mode
+--
+diff btw flex-basis and width

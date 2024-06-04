@@ -1,0 +1,431 @@
+:root {
+    --mainColor: #0FCBBA;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+img {
+    height: 20px;
+}
+
+.parent {
+    /* width: 1000px; */
+    margin: auto;
+}
+.parent > * {
+    margin: 15px;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.5rem;
+}
+
+header > nav {
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+/* Work */
+
+.work img {
+    width: 50px;
+    height: auto;
+    filter: invert(0%) ;
+}
+
+.work h1 {
+    font-size: 35px;
+    color: var(--mainColor);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.work p {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #999999ff;
+}
+
+.work > :first-child {
+    background-size: cover;
+    background-image: url('../assets/landing2.jpeg');
+    object-fit: cover;
+    padding: 10px;
+    padding-bottom: 100px;
+    height: calc(100vh - 64px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+
+.work > :first-child > h1{
+    font-size: 70px;
+    color: black;
+}
+
+.work > :first-child > p{
+    color: white;
+    font-size: 40px;
+}
+
+.work > :nth-child(2) {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.work > :nth-child(2) > div {
+    padding: 20px;
+    width: 15%;
+}
+
+.work > :nth-child(2) > div > p{
+    width: 50%;
+    margin: auto;
+    font-size: 10px;
+}
+
+.work > :nth-child(2) > :nth-child(2) {
+    box-shadow: 5px 5px 10px 1px lightgray;
+}
+
+.work > :nth-child(2) > div > *{
+    margin: 10px;
+}
+
+/* Services */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.services {
+    /* width: 1000px; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.services > :first-child {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services > :first-child > h2{
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #f5f5f5ff;
+}
+
+
+.services > :first-child > p{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -10%;
+    font-size: 15px;
+
+}
+
+.services img {
+    width: 20px;
+    height: auto;
+}
+
+.serivces-2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.serivces-2-1 {
+    width: 50%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.serivces-2-1 > div {
+    padding: 2%;
+    margin-bottom: 1%;
+    width: 46%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.serivces-2-1 > div > :nth-child(2) {
+    width: 80%;
+}
+
+.serivces-2-1 > div > :first-child *{
+    padding: 10px;
+}
+
+.serivces-2-1 > div > :nth-child(2) *{
+    padding: 2px;
+}
+
+
+
+.serivces-2-2 {
+    position: relative;
+    margin-left: 25%;
+}
+.sh-1 {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    box-shadow: 1px 0px 5px 2px gray;
+    position: absolute;
+    right: 20px;
+    top: 0%;
+    z-index: 1;
+}
+.sh-2 {
+    width: 75px;
+    height: 250px;
+    background-color: #2d4954ff;
+    position: absolute;
+    right: 8%;
+    top: -13%;
+    z-index: 0;
+} 
+
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #fafafaff;
+    padding-bottom: 20px;
+}
+.cards {
+    margin: 50px auto;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 250px;
+}
+.card img{
+    width: 200px;
+    height: fit-content;
+}
+
+
+.portfolio > :first-child {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio > :first-child > h2{
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ebebebff;
+}
+
+
+.portfolio > :first-child > p{
+    position: absolute;
+    bottom: 15%;
+    left: 48%;
+    margin-left: -10%;
+    font-size: 15px;
+}
+.more {
+    margin: auto;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+
+.more:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px black solid;
+}
+
+/* about */
+
+.about > :first-child {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about > :first-child > h2{
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #f5f5f5ff;
+}
+
+
+.about > :first-child > p{
+    position: absolute;
+    bottom: 15%;
+    left: 53%;
+    margin-left: -10%;
+    font-size: 15px;
+}
+
+.about > :nth-child(2) {
+    margin: 50px auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.about > :nth-child(2) > :first-child {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.about-sh1{
+    position: absolute;
+    top: -10%;
+    right: 5%;
+    width: 50px;
+    height: 150px;
+    background-color: #10c9b7ff;
+    z-index: 0;
+}
+.about-sh2{
+    position: absolute;
+    right: -30%;
+    bottom: 20%;
+    width: 120px;
+    height: 50px;
+    background-color: #10c9b7ff;
+    z-index: 1;
+}
+.about img {
+    width: 150px;
+    height: fit-content;
+    z-index: 2;
+}
+
+
+.about > :nth-child(2) > :nth-child(2) {
+    width: 50%;
+}
+
+
+.about > :nth-child(2) > :nth-child(2) > :first-child {
+    font-weight: bold;
+}
+
+.about > :nth-child(2) > :nth-child(2) > span{
+    display: block;
+    height: 1px;
+    width: 200px;
+    background-color: #10c9b7ff;
+    margin: 20px 0px;
+}
+
+/* Contact */
+
+.contact > :first-child {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact > :first-child > h2{
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ebebebff;
+}
+
+
+.contact > :first-child > p{
+    position: absolute;
+    bottom: 15%;
+    left: 53%;
+    margin-left: -10%;
+    font-size: 15px;
+}
+
+.contact {
+    background-color: #fafafaff;
+}
+
+.contact > * {
+    text-align: center;
+    background-color: #fafafaff;
+}
+
+.contact > :first-child > * {
+    padding-bottom: 20px;
+}
+
+.contact > :nth-child(2)  > p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: -40%;
+}
+
+.contact > :nth-child(2) > :nth-child(1) {
+    color: #2c4754ff;
+}
+
+.contact > :nth-child(2) > :nth-child(2) {
+    color: #10c9b7ff;
+}
+
+.contact > :nth-child(2) > :nth-child(3) {
+    font-size: 10px;
+    margin-left: -10%;
+}
+
+.contact img {
+    height: 10px;
+}
+
+/* footer */
+
+footer > * {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+    background-color: #2c4754ff;
+}
+
+footer span {
+    font-weight: bold;
+    color: #10c9b7ff;
+}
